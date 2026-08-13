@@ -126,7 +126,7 @@ ASCII Decoder는 수신 문자를 해석해 Watch·Stopwatch 또는 센서 모�
 각 모듈의 결과 데이터는 FND에 표시되며, ASCII Sender를 거쳐 문자열로 변환된 후 TX FIFO와 UART TX를 통해 PC로 전송됩니다.
 
 <p align="center">
-  <img src="./images/system_block_diagram.png" width="900">
+  <img src="./images/system_block_diagram.png" width="800">
 </p>
 
 <p align="center">
@@ -289,7 +289,7 @@ NEXT_STEP
 이를 통해 송신 모듈의 처리 속도보다 데이터가 빠르게 전달되어 문자가 누락되는 문제를 방지했습니다.
 
 <p align="center">
-  <img src="./images/ascii_sender_fsm.png" width="800">
+  <img src="./images/ascii_sender_fsm.png" width="700">
 </p>
 
 <p align="center">
@@ -446,7 +446,7 @@ Time Data
 ```
 
 <p align="center">
-  <img src="./images/ascii_string_simulation.png" width="850">
+  <img src="./images/ascii_string_simulation.png" width="750">
 </p>
 
 <p align="center">
@@ -462,7 +462,7 @@ Time Data
 UART로 Watch의 Up 명령을 한 번 전송했지만 설정값이 한 번에 2씩 증가하는 문제가 발생했습니다.
 
 <p align="center">
-  <img src="./images/watch_trouble_problem.png" width="850">
+  <img src="./images/watch_trouble_problem.png" width="750">
 </p>
 
 <p align="center">
@@ -476,7 +476,7 @@ ASCII Decoder에서 생성된 제어 신호가 2 Clock 동안 유지되고 있�
 Watch Control Unit은 이 신호를 두 번의 유효 입력으로 인식했고, 그 결과 설정값이 두 번 증가했습니다.
 
 <p align="center">
-  <img src="./images/watch_trouble_cause.png" width="850">
+  <img src="./images/watch_trouble_cause.png" width="750">
 </p>
 
 <p align="center">
@@ -504,7 +504,7 @@ assign done_1ps = done & ~done_reg;
 이를 통해 ASCII Decoder가 생성하는 제어 신호를 정확한 1 Clock Pulse로 제한했습니다.
 
 <p align="center">
-  <img src="./images/watch_trouble_solution.png" width="850">
+  <img src="./images/watch_trouble_solution.png" width="750">
 </p>
 
 <p align="center">
@@ -571,11 +571,13 @@ assign done_1ps = done & ~done_reg;
 ## 📸 FPGA 동작 결과
 
 <p align="center">
-  <img src="./images/fpga_demonstration.png" width="850">
+  <a href="https://youtu.be/BZwj4Vs72sw?si=0bTY2762HgJD2ish">
+    <img src="./images/fpga_demonstration.png" width="850">
+  </a>
 </p>
 
 <p align="center">
-  <b>Basys 3에서 Watch·Stopwatch를 실행한 결과</b>
+  <i>이미지를 클릭하면 Watch·Stopwatch 시연 영상을 확인할 수 있습니다.</i>
 </p>
 
 실제 FPGA 보드에서 다음 기능을 확인했습니다.
