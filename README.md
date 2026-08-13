@@ -572,7 +572,7 @@ assign done_1ps = done & ~done_reg;
 
 <p align="center">
   <a href="https://youtu.be/BZwj4Vs72sw?si=0bTY2762HgJD2ish">
-    <img src="./images/fpga_demonstration.png" width="850">
+    <img src="./images/fpga_demonstration.png" width="700">
   </a>
 </p>
 
