@@ -661,7 +661,7 @@ Watch와 Stopwatch를 Control Unit과 Datapath로 분리하면서 FSM이 제어 
 전체 시스템 설계 및 검증 과정은 아래 발표 자료에서 확인할 수 있습니다.
 
 <p align="center">
-  <a href="./docs/fpga_design_project_presentation.pdf">
+  <a href="./docs/260224_fpga_design_project.pdf">
     <b>📑 프로젝트 발표 자료 보기</b>
   </a>
 </p>
