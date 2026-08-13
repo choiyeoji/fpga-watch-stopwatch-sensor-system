@@ -39,17 +39,6 @@ UART/FIFO, ASCII 데이터 처리, Watch·Stopwatch, Sensor 모듈을 기능별�
 | **최여지** | ASCII + Watch·Stopwatch | ASCII Decoder·Sender, Watch·Stopwatch Control Unit 및 Datapath 설계 |
 
 각 담당자는 개별 모듈의 RTL 설계와 기능 검증을 수행하고, 모듈 간 Interface를 맞춰 최종 시스템으로 통합했습니다.
-```
-
-각 담당자는 개별 모듈의 RTL 설계와 기능 검증을 수행했으며, 모듈 간 Interface와 제어 신호를 맞춰 최종 시스템으로 통합했습니다.
-
-- **Top Module:** UART, Watch·Stopwatch, Sensor 및 FND 출력 경로 통합
-- **Sensor:** DHT11 온·습도 데이터와 HC-SR04 거리 데이터 생성
-- **UART/FIFO:** PC와 FPGA 사이의 직렬 데이터 송수신 및 버퍼링
-- **ASCII/Watch·Stopwatch:** PC 명령 해석, 출력 문자열 생성 및 시간 기능 제어
-
-> 본인은 ASCII Decoder·Sender와 Watch·Stopwatch를 담당했으며,  
-> 팀원이 구현한 UART/FIFO 및 Sensor 모듈과의 Interface를 맞춰 전체 시스템에 통합했습니다.
 
 ---
 
